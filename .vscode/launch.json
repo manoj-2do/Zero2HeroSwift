@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Zero2Hero}",
+            "name": "Debug Zero2Hero",
+            "program": "${workspaceFolder:Zero2Hero}/.build/debug/Zero2Hero",
+            "preLaunchTask": "swift: Build Debug Zero2Hero"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Zero2Hero}",
+            "name": "Release Zero2Hero",
+            "program": "${workspaceFolder:Zero2Hero}/.build/release/Zero2Hero",
+            "preLaunchTask": "swift: Build Release Zero2Hero"
+        }
+    ]
+}
