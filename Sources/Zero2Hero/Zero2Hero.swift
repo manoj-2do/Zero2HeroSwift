@@ -23,8 +23,6 @@ struct Zero2Hero {
         let num: UInt8 = 11
         print(num.clamp(low: 10, high: 200))
 
-        let manoj = Manoj()
-        print(manoj.name)
-
+        optionalsExample();
     }
 }
