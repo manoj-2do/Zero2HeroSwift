@@ -12,5 +12,19 @@ struct Zero2Hero {
         let makeCircle = makeCircle()
         print(shape.area())
         print(makeCircle.area())
+
+        var rank = 1
+        rank.plusOne()
+        print(rank)
+
+        let randomString = "    Lorem Ipsum this is a line with spacing.   "
+        print(randomString.trim())
+
+        let num: UInt8 = 11
+        print(num.clamp(low: 10, high: 200))
+
+        let manoj = Manoj()
+        print(manoj.name)
+
     }
 }
