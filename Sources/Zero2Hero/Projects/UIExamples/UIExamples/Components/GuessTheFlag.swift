@@ -38,8 +38,6 @@ struct GuessTheFlag: View {
                                 Image(countries[number]).clipShape(.capsule).shadow(radius: 2)
                             }.alert(scoreTitle, isPresented: $showingScore) {
                                 Button("Continue", action: askQuestion)
-                            } message: {
-                                Text("Your score is ???").font(.title.bold())
                             }
                         }
                     }
@@ -47,7 +45,7 @@ struct GuessTheFlag: View {
                     .padding(.vertical, 40)
                     .background(.ultraThinMaterial)
                     .clipShape(.rect(cornerRadius: 20))
-                Text("Score: ???")
+                Text("Score: \(score)")
                     .font(.title)
                        .foregroundStyle(.white)
                 Spacer()
@@ -63,6 +61,7 @@ struct GuessTheFlag: View {
     func flagTapped(_ num: Int) {
         if num == correctAnswer {
             scoreTitle = "Correct"
+            score += 1
         } else {
             scoreTitle = "Wrong"
         }
