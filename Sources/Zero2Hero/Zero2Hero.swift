@@ -24,5 +24,14 @@ struct Zero2Hero {
         print(num.clamp(low: 10, high: 200))
 
         optionalsExample();
+
+        let dolphin: Dolphin = Dolphin("Blue")
+        do{
+           let cancellable: CustomCancellable = dolphin.namePublisher.subscribe { newValue in
+                print("New name: \(newValue)")
+            }
+            dolphin.name = "Coral";
+            print(cancellable.cancel())
+        }
     }
 }
