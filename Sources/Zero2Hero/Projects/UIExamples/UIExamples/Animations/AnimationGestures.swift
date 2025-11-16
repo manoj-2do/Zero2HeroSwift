@@ -18,8 +18,6 @@ struct AnimationGestures: View {
     }
 }
 
-
-
 #Preview {
     AnimationGestures()
 }

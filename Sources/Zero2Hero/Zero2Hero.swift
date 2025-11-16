@@ -33,5 +33,15 @@ struct Zero2Hero {
             dolphin.name = "Coral";
             print(cancellable.cancel())
         }
+
+        //Dispatch Queues
+        // Queues.syncQueue()
+        // Queues.runSerialTask()
+        // Queues.qos()
+        // Queues.dispatchGroup()
+        // Queues.dispatchSemaphore()
+        // Queues.barrierBlocks()
+
+        runTaskDemo()
     }
 }
