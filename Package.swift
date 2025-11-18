@@ -6,8 +6,19 @@ let package = Package(
     platforms: [
         .macOS(.v14), .iOS(.v17)
     ],
+    dependencies: [
+        .package(
+            url: "https://github.com/apple/swift-collections",
+            from: "1.0.0"
+        )
+    ],
     targets: [
         .executableTarget(
-            name: "Zero2Hero", exclude: ["Projects"]),
+            name: "Zero2Hero",
+            dependencies: [
+                .product(name: "DequeModule", package: "swift-collections")
+            ],
+            exclude: ["Projects"]
+        ),
     ]
 )
