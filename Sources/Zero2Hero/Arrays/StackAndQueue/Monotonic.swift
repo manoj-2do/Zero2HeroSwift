@@ -199,4 +199,33 @@ class Monotonic {
         
         return String(resultStack)
     }
+
+    static func evalRPN(_ tokens: [String]) -> Int {
+        var stack:[Int] = [Int]()
+
+        for i:Int in 0..<tokens.count {
+            switch tokens[i] {
+                case "+":
+                    let operand1: Int = stack.removeLast()
+                    let operand2: Int = stack.removeLast()
+                    stack.append(operand1 + operand2)
+                case "-":
+                    let operand1: Int = stack.removeLast()
+                    let operand2: Int = stack.removeLast()
+                    stack.append(operand2 - operand1)
+                case "*":
+                    let operand1: Int = stack.removeLast()
+                    let operand2: Int = stack.removeLast()
+                    stack.append(operand1 * operand2)
+                case "/":
+                    let operand1: Int = stack.removeLast()
+                    let operand2: Int = stack.removeLast()
+                    stack.append(operand2 / operand1)
+                default:
+                    stack.append(Int(tokens[i])!)
+            }
+
+        }
+        return stack.first ?? 0
+    }
 }
