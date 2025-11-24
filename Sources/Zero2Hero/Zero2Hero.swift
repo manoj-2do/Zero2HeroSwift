@@ -50,8 +50,23 @@ struct Zero2Hero {
         // print("Trap Rain Water: \(trappedWater)")
         // print(Monotonic.removeDuplicateLetters("cbacdcbc"))
         // print(Monotonic.evalRPN(["2","1","+","3","*"]))
-        print(Monotonic.evalRPN(["4","13","5","/","+"]))
         // print("Remove Duplicates: \(removeDuplicates)")
         // print("Sliding Window Maximum: \(slidingWindowMax)")
+        // let minStack = MinStack();
+        // minStack.push(-2);
+        // minStack.push(0);
+        // minStack.push(-3);
+        // print(minStack.getMin()); // return -3
+        // minStack.pop();
+        // print(minStack.top());    // return 0
+        // print(minStack.getMin()); // return -2
+
+        // let simplifyPath = SimplifyPath()
+        // simplifyPath.run("/.../a/../b/c/../d/./")
+        // simplifyPath.run("/../")
+
+        let validParantheses = ValidParantheses()
+        let result = validParantheses.longestValid(")())()())")
+        print("Max Substr Len: \(result)")
     }
 }

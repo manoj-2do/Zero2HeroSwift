@@ -228,4 +228,5 @@ class Monotonic {
         }
         return stack.first ?? 0
     }
+
 }
