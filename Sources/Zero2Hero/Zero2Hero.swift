@@ -68,5 +68,10 @@ struct Zero2Hero {
         let validParantheses = ValidParantheses()
         let result = validParantheses.longestValid(")())()())")
         print("Max Substr Len: \(result)")
+
+        let xyz = ProductExceptSelf().run([2,2,3,4])
+        print("Product Itself self: \(xyz)")
     }
 }
+
+
