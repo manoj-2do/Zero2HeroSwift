@@ -14,4 +14,8 @@ class ProductExceptSelf {
 
         return result
     }
+
+    static func debug() {
+        print("hello world")
+    }
 }
