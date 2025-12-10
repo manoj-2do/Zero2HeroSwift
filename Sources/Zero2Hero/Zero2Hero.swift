@@ -14,6 +14,7 @@ struct Zero2Hero {
     //    print(LeetCode316.removeDuplicateLetters())
     //    print(LeetCodeXX1.prefixSum())
     //    print("Product Except Self: \(LeetCode238.productExceptSelf())")
-          print(LeetCode209.minSizeSubArraySum())
+    //    print(LeetCode209.minSizeSubArraySum())
+          print(LeetCode128.longestConsecutive())
     }
 }
