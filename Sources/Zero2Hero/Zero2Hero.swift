@@ -16,6 +16,32 @@ struct Zero2Hero {
     //    print("Product Except Self: \(LeetCode238.productExceptSelf())")
     //    print(LeetCode209.minSizeSubArraySum())
     //    print(LeetCode128.longestConsecutive())
-    print(LeetCode217.containsDuplicate())
+    //    print(LeetCode217.containsDuplicate())
+        print(LeetCode219.containsNearbyDuplicate())
     }
 }
+
+
+//[1,2,3,1,2,3], k = 2
+/*
+    Contains Nearby Duplicate
+    1: [0, 3] -> 3
+    2: [1, 4] -> 3
+    3: [2, 5] -> 3
+    
+    Nearby Duplicate -> False
+
+    [1,0,1,1], k=1
+
+
+    1: 0
+    2: 1
+    3: 2
+
+    currIndex = 3
+    arr[1] = 0
+    diff = 3 - 0 => 3 
+    is 3 <=k false
+        arr[1] = currIndex
+    
+*/
