@@ -17,31 +17,41 @@ struct Zero2Hero {
     //    print(LeetCode209.minSizeSubArraySum())
     //    print(LeetCode128.longestConsecutive())
     //    print(LeetCode217.containsDuplicate())
-        print(LeetCode219.containsNearbyDuplicate())
+    //    print(LeetCode219.containsNearbyDuplicate())
+    print(LeetCode1.twoSum())
     }
 }
 
 
-//[1,2,3,1,2,3], k = 2
 /*
-    Contains Nearby Duplicate
-    1: [0, 3] -> 3
-    2: [1, 4] -> 3
-    3: [2, 5] -> 3
+    [1,2,3,1], indxDif = 3, valDif = 0
+
+    hashMap
+        1: 3
+        2: 1
+        3: 2
     
-    Nearby Duplicate -> False
+    abs 1 - 0 = 1
+        exists
+            currIndex = 0
+            hashMapIndex = 3
 
-    [1,0,1,1], k=1
+            3 - 0 <= 3
 
 
-    1: 0
-    2: 1
-    3: 2
+    [1,5,9,1,5,9], indxDif = 2, valDif = 3
 
-    currIndex = 3
-    arr[1] = 0
-    diff = 3 - 0 => 3 
-    is 3 <=k false
-        arr[1] = currIndex
+    hashMap
+        1: 3
+        5: 4
+        9: 5
+    
+    abs 1 - 0 = 1
+        exists
+            currIndex = 0
+            hashMapIndex = 3
+
+            3 - 0 <= 3
+        
     
 */
