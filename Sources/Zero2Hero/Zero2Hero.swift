@@ -18,7 +18,9 @@ struct Zero2Hero {
     //    print(LeetCode128.longestConsecutive())
     //    print(LeetCode217.containsDuplicate())
     //    print(LeetCode219.containsNearbyDuplicate())
-    print(LeetCode1.twoSum())
+    //    print(LeetCode1.twoSum())
+    print(LeetCode242.isAnagram())
+    
     }
 }
 
