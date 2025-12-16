@@ -19,41 +19,8 @@ struct Zero2Hero {
     //    print(LeetCode217.containsDuplicate())
     //    print(LeetCode219.containsNearbyDuplicate())
     //    print(LeetCode1.twoSum())
-    print(LeetCode242.isAnagram())
-    
+    //    print(LeetCode242.isAnagram())
+    //    print(LeetCode220.containsNearbyAlmostDuplicate()) -> NOT COMPLETED
+    print(LeetCode49.groupAnagrams())
     }
 }
-
-
-/*
-    [1,2,3,1], indxDif = 3, valDif = 0
-
-    hashMap
-        1: 3
-        2: 1
-        3: 2
-    
-    abs 1 - 0 = 1
-        exists
-            currIndex = 0
-            hashMapIndex = 3
-
-            3 - 0 <= 3
-
-
-    [1,5,9,1,5,9], indxDif = 2, valDif = 3
-
-    hashMap
-        1: 3
-        5: 4
-        9: 5
-    
-    abs 1 - 0 = 1
-        exists
-            currIndex = 0
-            hashMapIndex = 3
-
-            3 - 0 <= 3
-        
-    
-*/
