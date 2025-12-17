@@ -21,6 +21,7 @@ struct Zero2Hero {
     //    print(LeetCode1.twoSum())
     //    print(LeetCode242.isAnagram())
     //    print(LeetCode220.containsNearbyAlmostDuplicate()) -> NOT COMPLETED
-    print(LeetCode49.groupAnagrams())
+    //    print(LeetCode49.groupAnagrams())
+    print(LeetCode347.topKFrequent())
     }
 }
